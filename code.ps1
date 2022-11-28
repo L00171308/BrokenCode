@@ -35,6 +35,7 @@ Network-Tests $computerNames
 .PARAMETERS
  $ServerNames: Pass a list of server names as String Array
 #>
+#Network-Tests value: 4
 function Network-Tests
 {
  Param(
@@ -114,6 +115,7 @@ eventlog
 .PARAMETERS
  $ComputerName: A Valid Computer Name or IP Address
 #>
+#Get-UserDetail value: 3
 function Get-UserDetail
 {
  [CmdletBinding()]
@@ -159,6 +161,7 @@ $ComputerName).UserName
 .PARAMETERS
  $ComputerName: A Valid Computer Name or IP Address
 #>
+#Check-WarningsErrors value: 3
 function Check-WarningsErrors
 {
  [CmdletBinding()]
@@ -233,6 +236,7 @@ $errorOutput
 .PARAMETERS
  $ComputerName: A Valid Computer Name or IP Address
 #>
+#Get-NetworkInfo value: 3
 function Get-NetworkInfo
 {
  [CmdletBinding()]
@@ -292,6 +296,7 @@ Property $networkInfoOutput
 # fill in appropriate comments for the method as per the section above. this
 comment refers to the
 # check-openports function shown below.
+#Check-OpenPorts value: 3
 function Check-OpenPorts
 {
  [CmdletBinding()]
